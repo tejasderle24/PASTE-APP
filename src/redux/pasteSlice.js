@@ -9,23 +9,23 @@ export const pasteSlice = createSlice({
   name: 'paste',
   initialState,
   reducers: {
-    increment: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
-      state.value += 1
+    addToPaste: (state, action) => {
+      
     },
-    decrement: (state) => {
-      state.value -= 1
+    removeFormPaste: (state, action) => {
+      
     },
-    incrementByAmount: (state, action) => {
-      state.value += action.payload
+    updateToPaste: (state, action) => {
+      
     },
+    resetAllPaste: (state, action) => {
+      
+    },
+    
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { addToPaste, removeFormPaste, updateToPaste, resetAllPaste } = pasteSlice.actions
 
-export default counterSlice.reducer
+export default pasteSlice.reducer
